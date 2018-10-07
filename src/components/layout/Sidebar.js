@@ -53,6 +53,7 @@ export class Sidebar extends Component {
                 <NavLink to="/LoadingPage" activeClassName="is-active">Loading</NavLink>
                 <NavLink to="/MediaObjPage" activeClassName="is-active">MediaObj</NavLink>
                 <NavLink to="/PaginationPage" activeClassName="is-active">Pagination</NavLink>
+                <NavLink to="/TilesPage" activeClassName="is-active">Tiles</NavLink>
                 <NavLink to="/TooltipPage" activeClassName="is-active">Tooltip</NavLink>
                 <NavLink to="/ToastPage" activeClassName="is-active">Toast</NavLink>
               </SidebarNav>

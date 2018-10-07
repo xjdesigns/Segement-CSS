@@ -7,11 +7,11 @@
     margin: 24px 0;
   }
 
-  app-tile {
+  .#{$ns}app-tile {
     flex: 0 0 200px;
     display: block;
 
-    &.app-tile--fave {
+    &--fave {
       flex: 1 0 400px;
     }
   }

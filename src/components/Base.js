@@ -44,7 +44,7 @@ export class BasePage extends Component {
           <div className="sg-divider"></div>
 
           <div className="flex">
-            <div className="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
 
 <CodeSnippet>
   {`
@@ -65,7 +65,7 @@ export class BasePage extends Component {
 </CodeSnippet>
 
             </div>
-            <div className="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <h1>Headline 1</h1>
               <h2>Headline 2</h2>
               <h3>Headline 3</h3>

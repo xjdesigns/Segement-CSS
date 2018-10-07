@@ -20,7 +20,7 @@ export class MediaObjPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <div className="spx-media">
                 <div className="spx-media__element">
                   <img src="https://images.unsplash.com/photo-1472457974886-0ebcd59440cc?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=512&amp;q=80&amp;cs=tinysrgb&amp;crop=" style={{width: '200px'}} alt="me" />
@@ -44,7 +44,7 @@ export class MediaObjPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <h2>Media Object</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

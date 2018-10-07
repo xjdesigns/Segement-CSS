@@ -14,7 +14,7 @@ export class TemplatePage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
 
               <Flyout alignment="left"/>
 
@@ -36,7 +36,7 @@ export class TemplatePage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <h2>Flyout</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

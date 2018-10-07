@@ -15,7 +15,7 @@ export class RangeSliderPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <div className="spx-range-slider">
                 <input type="range" value="10" min="0" max="100" step="1" />
               </div>
@@ -28,7 +28,7 @@ export class RangeSliderPage extends Component {
   `}
 </CodeSnippet>
             </div>
-            <div class="flex__i--xs-12 flex__i--sm-6">
+            <div class="flex__i--xs-12 flex__i--md-6">
               <h2>Range Sliders</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

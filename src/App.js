@@ -32,6 +32,7 @@ import FlyoutPage from './components/pages/FlyoutPage'
 import LoadingPage from './components/pages/LoadingPage'
 import MediaObjPage from './components/pages/MediaObjPage'
 import PaginationPage from './components/pages/PaginationPage'
+import TilesPage from './components/pages/TilesPage'
 import TooltipPage from './components/pages/TooltipPage'
 import ToastPage from './components/pages/ToastPage'
 
@@ -65,6 +66,7 @@ class App extends Component {
           <Route exact path="/LoadingPage" component={LoadingPage}/>
           <Route exact path="/MediaObjPage" component={MediaObjPage}/>
           <Route exact path="/PaginationPage" component={PaginationPage}/>
+          <Route exact path="/TilesPage" component={TilesPage}/>
           <Route exact path="/TooltipPage" component={TooltipPage}/>
           <Route exact path="/ToastPage" component={ToastPage}/>
         </Switch>
