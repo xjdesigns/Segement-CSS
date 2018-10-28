@@ -14,7 +14,7 @@ export class TemplatePage extends Component {
         <div className="sg-hero">
           <div className="sg-hero__elem sg-hero__elem--min">
             <div className="spx-img">
-              <img src={imgSrc} alt="SPX Image from Unsplash" />
+              <img src={imgSrc} alt="SPX from Unsplash" />
             </div>
           </div>
         </div>
@@ -23,16 +23,16 @@ export class TemplatePage extends Component {
           <div className="flex">
             <div class="flex__i--xs-12 flex__i--md-6">
               <div className="spx-img">
-                <img src={imgSrc} alt="SPX Image from Unsplash" />
+                <img src={imgSrc} alt="SPX from Unsplash" />
               </div>
               <div className="spx-img spx-img--sm">
-                <img src={imgSrc} alt="SPX Image from Unsplash" />
+                <img src={imgSrc} alt="SPX from Unsplash" />
               </div>
               <div className="spx-img spx-img--md">
-                <img src={imgSrc} alt="SPX Image from Unsplash" />
+                <img src={imgSrc} alt="SPX from Unsplash" />
               </div>
               <div className="spx-img spx-img--lg">
-                <img src={imgSrc} alt="SPX Image from Unsplash" />
+                <img src={imgSrc} alt="SPX from Unsplash" />
               </div>
 
 <CodeSnippet>

@@ -8,7 +8,14 @@ export class VideoPage extends Component {
         <div className="sg-hero">
           <div className="sg-hero__elem sg-hero__elem--min">
             <div className="spx-vid">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/zw47_q9wbBE" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zw47_q9wbBE"
+                frameborder="0"
+                allowfullscreen
+                title="DemoTop"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -17,7 +24,14 @@ export class VideoPage extends Component {
           <div className="flex">
             <div class="flex__i--xs-12 flex__i--md-6">
               <div className="spx-vid">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zw47_q9wbBE" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zw47_q9wbBE"
+                frameborder="0"
+                allowfullscreen
+                title="DemoMain"
+              ></iframe>
               </div>
 
 <CodeSnippet>

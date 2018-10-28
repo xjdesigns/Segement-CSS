@@ -72,7 +72,7 @@ export class BasePage extends Component {
               <h4>Headline 4</h4>
               <h5>Headline 5</h5>
               <h6>Headline 6</h6>
-              <a href="#" className="spx-link">Anchor Link</a>
+              <a href="https://github.com/xjdesigns/Segment-CSS" className="spx-link">Anchor Link</a>
               <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque dolorum excepturi repellat totam perferendis voluptatibus doloribus tempore maiores aliquid!</p>
               <blockquote>Base blockquote, additional classes available</blockquote>
               <ul className="spx-list">

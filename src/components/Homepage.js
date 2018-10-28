@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import CodeSnippet from './helper/CodeSnippet'
 
 export class Homepage extends Component {
   render () {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import CodeSnippet from '../helper/CodeSnippet'
 import DataTable from '../components/DataTable'
 import { HELP_DESC } from '../../constants/constants'
 
