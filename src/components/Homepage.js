@@ -12,6 +12,11 @@ export class Homepage extends Component {
           </div>
         </div>
 
+        <div>
+          <icon-button icon="check" size="sm" material></icon-button>
+          <icon-button icon="accessible" material></icon-button>
+        </div>
+
         <div className="app-view">
           <div>
             <h2>The Idea</h2>
