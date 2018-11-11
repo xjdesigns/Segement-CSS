@@ -1,7 +1,32 @@
 import React, { Component } from 'react'
+import firebase from './firebase.js' // <--- add this line
 
 export class Homepage extends Component {
+  state = {
+    items: [],
+    notifications: [],
+  }
+
+  componentDidMount() {
+    const notifRef = firebase.database().ref('Notifications')
+    notifRef.on('value', (snapshot) => {
+      let notifications = snapshot.val()
+      let newState = []
+      for (let notification in notifications) {
+        newState.push({
+          title: notification,
+          description: notifications[notification],
+        })
+      }
+      this.setState({
+        notifications: newState
+      })
+    })
+  }
+
   render () {
+    const { notifications } = this.state
+
     return (
       <div>
         <div className="sg-hero">
@@ -11,6 +36,15 @@ export class Homepage extends Component {
             </div>
           </div>
         </div>
+
+        {notifications.map(notification => {
+          return (
+            <div>
+              <h2>{notification.title}</h2>
+              <p>{notification.description}</p>
+            </div>
+          )
+        })}
 
         <div>
           <icon-button icon="check" size="sm" material></icon-button>
