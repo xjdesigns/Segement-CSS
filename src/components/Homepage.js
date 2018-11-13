@@ -22,6 +22,14 @@ export class Homepage extends Component {
         notifications: newState
       })
     })
+
+    document.addEventListener('newMessage', function(ev) {
+      console.warn('woot woot', ev)
+    })
+  }
+
+  catchCustomEvent = (ev) => {
+    console.warn('ev:', ev)
   }
 
   render () {
@@ -37,19 +45,14 @@ export class Homepage extends Component {
           </div>
         </div>
 
-        {notifications.map(notification => {
-          return (
-            <div>
-              <h2>{notification.title}</h2>
-              <p>{notification.description}</p>
-            </div>
-          )
-        })}
+        <div className="worker">
+          <number-spinner value="2"></number-spinner>
+        </div>
 
-        <div>
+        {/* <div>
           <icon-button icon="check" size="sm" material></icon-button>
           <icon-button icon="accessible" material></icon-button>
-        </div>
+        </div> */}
 
         <div className="app-view">
           <div>
