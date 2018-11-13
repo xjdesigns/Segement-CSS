@@ -23,7 +23,7 @@ export class Homepage extends Component {
       })
     })
 
-    document.addEventListener('newMessage', function(ev) {
+    document.addEventListener('spinnerChanged', function(ev) {
       console.warn('woot woot', ev)
     })
   }

@@ -1,4 +1,6 @@
 // Define our template and create in the constructor
+const darkGray = '#606060'
+const darkGrayHover = '#000'
 function createNumberSpinner () {
   const template = `
     <style>
@@ -8,6 +10,32 @@ function createNumberSpinner () {
       .spinner-value,
       .spinner-btn {
         display: inline-block;
+        vertical-align: middle;
+      }
+      .spinner-value {
+        min-width: 100px;
+        padding: 12px;
+        margin: 0 -5px 0 -4px;
+        text-align: center;
+        border: 1px solid ${darkGray};
+        border-radius: 6px;
+      }
+      .spinner-btn {
+        min-width: 50px;
+        padding: 9px;
+        background: ${darkGray};
+        color: white;
+        font-size: 100%;
+        transition: background .3s ease-in-out;
+      }
+      .spinner-btn:hover {
+        background: ${darkGrayHover};
+      }
+      .spinner-btn:first-of-type {
+        border-radius: 6px 0 0 6px;
+      }
+      .spinner-btn:last-of-type {
+        border-radius: 0 6px 6px 0;
       }
     </style>
     <button id="minusBtn" class="spinner-btn" aria-label="minus">-</button>
@@ -33,6 +61,7 @@ class NumberSpinner extends HTMLElement {
     this._innerValue = 0
     this.incrementValue = this.incrementValue.bind(this)
     this.decrementValue = this.decrementValue.bind(this)
+    this.dispatchChangeEvent = this.dispatchChangeEvent.bind(this)
   }
 
   connectedCallback () {
@@ -68,19 +97,16 @@ class NumberSpinner extends HTMLElement {
 
   decrementValue () {
     this.value = --this._innerValue
-    const event = new CustomEvent("newMessage", {
-      detail: {
-        innerValue: this._innerValue,
-      },
-      bubbles: true,
-      cancelable: true
-    });
-    this.dispatchEvent(event);
+    this.dispatchChangeEvent()
   }
 
   incrementValue () {
     this.value = ++this._innerValue
-    const event = new CustomEvent("newMessage", {
+    this.dispatchChangeEvent()
+  }
+
+  dispatchChangeEvent () {
+    const event = new CustomEvent("spinnerChanged", {
       detail: {
         innerValue: this._innerValue,
       },
