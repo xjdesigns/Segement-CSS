@@ -1,7 +1,53 @@
 import React, { Component } from 'react'
 
 export class Homepage extends Component {
+  state = {
+    touchIsActive: false,
+  }
+
+  componentDidMount () {
+    this.el = document.querySelector('[data-id="testEl"]')
+    this.el.addEventListener('touchstart', this.handleTouchStart, false)
+    this.el.addEventListener('touchmove', this.handleTouchMove, false)
+
+    this.touchStartX = 0
+    this.touchMoveX = 0
+  }
+
+  handleTouchStart = ev => {
+    this.touchMoveX = 0
+    const touchStart = ev.touches[0].clientX
+    this.touchStartX = touchStart
+  }
+
+  handleTouchMove = ev => {
+    const touchMove = ev.touches[0].clientX
+    this.touchMoveX = touchMove
+    this.handleTouchAction(touchMove)
+  }
+
+  handleTouchAction = move => {
+    const threshold = 55
+    const diff = this.touchStartX - move
+    // if (this.touchStartX > move) {
+    //   diff = this.touchStartX - move
+    // } else {
+    //   diff = move - this.touchStartX
+    // }
+    if (diff >= threshold) {
+      this.setState({
+        touchIsActive: true,
+      })
+    } else {
+      this.setState({
+        touchIsActive: false,
+      })
+    }
+  }
+
   render () {
+    const { touchIsActive } = this.state
+
     return (
       <div>
         <div className="sg-hero">
@@ -13,6 +59,25 @@ export class Homepage extends Component {
         </div>
 
         <div className="app-view">
+          <div>
+            <div className={`test-card ${touchIsActive ? 'is-active' : ''}`} data-id="testEl">
+              <div className="test-card__main">
+                <h2>Worker</h2>
+              </div>
+              <div className="test-card__actions">
+                <button className="spx-btn spx-btn--pr spx-btn--sm">Action</button>
+              </div>
+              <div className="test-card__touch-action">
+                <div className="the-actions">
+                  <button className="spx-btn spx-btn--pr spx-btn--sm">Action</button>
+                  <button className="spx-btn spx-btn--pr spx-btn--sm">Action</button>
+                  <button className="spx-btn spx-btn--pr spx-btn--sm">Action</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <div>
             <h2>The Idea</h2>
             <p>SEGEMENT CSS is a framework that uses a base core and layers on top of it. The idea comes from working inside of a corportate office and hearing the constraints from teams.</p>

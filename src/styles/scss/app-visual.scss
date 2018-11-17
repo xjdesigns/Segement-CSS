@@ -308,3 +308,44 @@ $header: 72px;
 pre {
   background: white !important;
 }
+
+// TEST CARD for gestures
+.test-card {
+  $self: &;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 6px;
+  background: white;
+  border: 1px solid $grey-l1;
+  border-radius: 6px;
+  overflow: hidden;
+  user-select: none;
+
+  &.is-active {
+    #{$self}__touch-action {
+      transform: translate3d(0%, 0, 0);
+    }
+  }
+
+  &__main {
+    flex: 1;
+  }
+
+  &__actions {
+    flex: 0 0 auto;
+  }
+
+  &__touch-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background: $grey-d1;
+    padding: 6px;
+    transform: translate3d(100%, 0, 0);
+    transition: transform .4s ease-in-out;
+  }
+}
