@@ -18,8 +18,22 @@ export class TooltipPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
-              <span className="spx-adv-tip">
+            <div className="flex__i--xs-12 flex__i--md-6">
+              <span className="spx-adv-tip spx-adv-tip--btm">
+                Hover over me
+                <div className="spx-adv-tip__content">
+                  Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                </div>
+              </span>
+
+              <span className="spx-adv-tip spx-adv-tip--left">
+                Hover over me
+                <div className="spx-adv-tip__content">
+                  Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                </div>
+              </span>
+
+              <span className="spx-adv-tip spx-adv-tip--right">
                 Hover over me
                 <div className="spx-adv-tip__content">
                   Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
@@ -38,7 +52,7 @@ export class TooltipPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Tooltips(css only)</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

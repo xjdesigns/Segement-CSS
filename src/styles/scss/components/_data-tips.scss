@@ -43,22 +43,11 @@
     }
   }
 
-  &--left,
-  &--right {
-    &:hover {
-      .#{$ns}adv-tip__content {
-        top: 50%;
-        bottom: auto;
-        transform: translate(0%, -50%) scale(1);
-      }
-    }
-  }
-
   &--left {
     &:hover {
       .#{$ns}adv-tip__content {
-        left: auto;
-        right: calc(100% + 12px);
+        left: 0%;
+        transform: translateX(-100%) scale(1);
       }
     }
   }
@@ -66,9 +55,16 @@
   &--right {
     &:hover {
       .#{$ns}adv-tip__content {
-        left: calc(100% + 12px);
-        right: auto;
+        left: 100%;
+        transform: translateX(0%) scale(1);
       }
+    }
+  }
+
+  &--btm {
+    .#{$ns}adv-tip__content {
+      top: calc(100% + 8px);
+      bottom: auto;
     }
   }
 }

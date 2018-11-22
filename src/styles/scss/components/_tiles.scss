@@ -8,11 +8,11 @@
   }
 
   .#{$ns}app-tile {
-    flex: 0 0 200px;
+    flex: 0 0 100%;
     display: block;
 
     &--fave {
-      flex: 1 0 400px;
+      flex: 1 0 100%;
     }
   }
 
