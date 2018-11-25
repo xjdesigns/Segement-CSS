@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 export class Header extends Component {
   render () {
@@ -17,9 +16,13 @@ export class Header extends Component {
           SEGMENT CSS
         </div>
         <div className="app-header__links">
-          <Link to="/homepage">
-            <span>v1:ALPHA</span>
-          </Link>
+          <a
+            href="https://github.com/xjdesigns/Segment-CSS/blob/master/SIXPIXELS/style.css"
+            className="spx-link"
+            target="_blank"
+          >
+            <span>v1.0.0</span>
+          </a>
         </div>
 
       </header>
