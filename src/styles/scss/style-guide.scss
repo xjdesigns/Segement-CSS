@@ -53,8 +53,12 @@ code.#{$nssg}code-block {
   background: #ededed;
 
   &__elem {
-    flex: 0 0 auto;
+    text-align: center;
     margin: 48px auto;
+
+    @media(min-width: 30em) {
+      flex: 0 0 auto;
+    }
 
     &--min {
       min-width: 40vw;

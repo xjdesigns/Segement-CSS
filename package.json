@@ -1,6 +1,6 @@
 {
-  "name": "6px",
-  "version": "0.1.0",
+  "name": "segment_css",
+  "version": "1.0.0",
   "private": true,
   "homepage": "http://xjdesigns.github.io/Segment-CSS",
   "dependencies": {
@@ -30,7 +30,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "sass": "gulp watch",
-    "sixpixels": "gulp prod",
+    "segment": "gulp prod",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }

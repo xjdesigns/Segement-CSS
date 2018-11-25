@@ -19,34 +19,64 @@ export class TooltipPage extends Component {
         <div className="app-view">
           <div className="flex">
             <div className="flex__i--xs-12 flex__i--md-6">
-              <span className="spx-adv-tip spx-adv-tip--btm">
-                Hover over me
-                <div className="spx-adv-tip__content">
-                  Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
-                </div>
-              </span>
+              <div>
+                <span className="spx-adv-tip">
+                  Normal tip
+                  <div className="spx-adv-tip__content">
+                    Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                  </div>
+                </span>
+              </div>
 
-              <span className="spx-adv-tip spx-adv-tip--left">
-                Hover over me
-                <div className="spx-adv-tip__content">
-                  Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
-                </div>
-              </span>
+              <div>
+                <span className="spx-adv-tip spx-adv-tip--left">
+                  Left tip
+                  <div className="spx-adv-tip__content">
+                    Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                  </div>
+                </span>
+              </div>
 
-              <span className="spx-adv-tip spx-adv-tip--right">
-                Hover over me
-                <div className="spx-adv-tip__content">
-                  Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
-                </div>
-              </span>
+              <div>
+                <span className="spx-adv-tip spx-adv-tip--right">
+                  Right tip
+                  <div className="spx-adv-tip__content">
+                    Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                  </div>
+                </span>
+              </div>
+
+              <div>
+                <span className="spx-adv-tip spx-adv-tip--btm">
+                  Bottom modifier
+                  <div className="spx-adv-tip__content">
+                    Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
+                  </div>
+                </span>
+              </div>
 
 <CodeSnippet>
   {`
     <span class="spx-adv-tip">
-      Hover over me
+      Standard
       <div class="spx-adv-tip__content">
         Look at me being all tooltip. I can even put markup inside <a href="http://google.com">google saves lives.</a>
       </div>
+    </span>
+
+    <span class="spx-adv-tip spx-adv-tip--left">
+      Left tip
+      <div class="spx-adv-tip__content">...</div>
+    </span>
+
+    <span class="spx-adv-tip spx-adv-tip--right">
+      Right tip
+      <div class="spx-adv-tip__content">...</div>
+    </span>
+
+    <span class="spx-adv-tip spx-adv-tip--btm">
+      Right tip
+      <div class="spx-adv-tip__content">...</div>
     </span>
   `}
 </CodeSnippet>
@@ -58,6 +88,10 @@ export class TooltipPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>SPX tooltips come as css only, no JS needed. Apply the code to any element to reveal a tooltip on hover.</p>
+              <p>
+                You can apply any markup inside of a tooltip but that usually isnt a good idea.
+              </p>
+              <p>All tooltips can be used with the bottom modifier.</p>
             </div>
           </div>
 
