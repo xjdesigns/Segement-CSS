@@ -1,28 +1,8 @@
 import React, { Component } from 'react'
-import firebase from './firebase.js' // <--- add this line
+import MultiRange from './MultiRange'
 
 export class Homepage extends Component {
-  state = {
-    items: [],
-    notifications: [],
-  }
-
   componentDidMount() {
-    const notifRef = firebase.database().ref('Notifications')
-    notifRef.on('value', (snapshot) => {
-      let notifications = snapshot.val()
-      let newState = []
-      for (let notification in notifications) {
-        newState.push({
-          title: notification,
-          description: notifications[notification],
-        })
-      }
-      this.setState({
-        notifications: newState
-      })
-    })
-
     document.addEventListener('spinnerChanged', function(ev) {
       console.warn('woot woot', ev)
     })
@@ -33,8 +13,6 @@ export class Homepage extends Component {
   }
 
   render () {
-    const { notifications } = this.state
-
     return (
       <div>
         <div className="sg-hero">
@@ -43,6 +21,10 @@ export class Homepage extends Component {
               <h1>SEGMENT CSS</h1>
             </div>
           </div>
+        </div>
+
+        <div className="spx-mg-12">
+          <MultiRange />
         </div>
 
         <div className="worker">

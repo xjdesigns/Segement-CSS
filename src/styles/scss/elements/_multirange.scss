@@ -1,0 +1,33 @@
+:root {
+  --mTrack: 2px;
+  --mThumbW: 20px;
+  --mThumbH: 20px;
+  --mThumbR: 50%;
+}
+
+.spx-mrange {
+  position: relative;
+  cursor: pointer;
+
+  & > * {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__track {
+    height: var(--mTrack);
+    background: rgba(200, 200, 200, 1);
+  }
+
+  &__thumb,
+  &__thb {
+    position: absolute;
+    top: -10px;
+    left: 0%;
+    width: var(--mThumbW);
+    height: var(--mThumbH);
+    background: rgba(180, 180, 180, 1);
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: var(--mThumbR);
+  }
+}
