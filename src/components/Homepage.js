@@ -27,24 +27,24 @@ export class Homepage extends Component {
           </div>
         </div>
 
-        <div className="spx-mg-12">
-          <multi-slider values="10,30,60,90"></multi-slider>
-        </div>
-
-        <div className="spx-mg-12">
-          <MultiRange />
-        </div>
-
-        <div className="spx-mg-12">
-          <number-spinner value="2"></number-spinner>
-        </div>
-
-        {/* <div>
-          <icon-button icon="check" size="sm" material></icon-button>
-          <icon-button icon="accessible" material></icon-button>
-        </div> */}
-
         <div className="app-view">
+          <div className="spx-mg-12">
+            <multi-slider values="10,30,60,90"></multi-slider>
+          </div>
+
+          <div className="spx-mg-12">
+            {/* <MultiRange /> */}
+          </div>
+
+          <div className="spx-mg-12">
+            <number-spinner value="2"></number-spinner>
+          </div>
+
+          {/* <div>
+            <icon-button icon="check" size="sm" material></icon-button>
+            <icon-button icon="accessible" material></icon-button>
+          </div> */}
+
           <div>
             <h2>The Idea</h2>
             <p>SEGEMENT CSS is a framework that uses a base core and layers on top of it. The idea comes from working inside of a corportate office and hearing the constraints from teams.</p>

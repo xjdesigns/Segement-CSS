@@ -35,6 +35,7 @@ class MultiSlider extends HTMLElement {
     this.startDrag = this.startDrag.bind(this)
     this.stopDrag = this.stopDrag.bind(this)
     this.handleMove = this.handleMove.bind(this)
+    this.updateValueArray = this.updateValueArray.bind(this)
     this.updateValuesOnChange = this.updateValuesOnChange.bind(this)
     this.dispatchChangeEvent = this.dispatchChangeEvent.bind(this)
   }
@@ -80,6 +81,10 @@ class MultiSlider extends HTMLElement {
 
   createTemplate () {
     return createMultiSlider()
+  }
+
+  updateValueArray () {
+
   }
 
   initializeValues (val) {
@@ -179,7 +184,6 @@ class MultiSlider extends HTMLElement {
 
       thumbMap[this.currentId].value = offsetMulti
       thumbMap[this.currentId].element.setAttribute('style', `left: calc(${offsetMulti}% - 10px)`)
-      const value = offsetMulti
     }
   }
 
@@ -188,14 +192,15 @@ class MultiSlider extends HTMLElement {
     const idx = this.currentIndex
     if (values.length > 1) {
       if (idx === 0) {
-        map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
+        map[`${this.thumbKey}${idx + 1}`].min = map[`${this.thumbKey}${idx}`].value + 1
       } else if (idx === (values.length - 1)) {
-        map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
+        map[`${this.thumbKey}${idx - 1}`].max = map[`${this.thumbKey}${idx}`].value - 1
       } else {
-        map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
-        map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
+        map[`${this.thumbKey}${idx - 1}`].max = map[`${this.thumbKey}${idx}`].value - 1
+        map[`${this.thumbKey}${idx + 1}`].min = map[`${this.thumbKey}${idx}`].value + 1
       }
     }
+    this.values[idx] = map[`${this.thumbKey}${idx}`].value
   }
 
   // TODO: I never update the values again....
