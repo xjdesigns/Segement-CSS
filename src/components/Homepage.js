@@ -6,6 +6,10 @@ export class Homepage extends Component {
     document.addEventListener('spinnerChanged', function(ev) {
       console.warn('woot woot', ev)
     })
+
+    document.addEventListener('multiRangeChanged', function(ev) {
+      console.warn('woot multiRangeChanged', ev)
+    })
   }
 
   catchCustomEvent = (ev) => {
@@ -24,10 +28,14 @@ export class Homepage extends Component {
         </div>
 
         <div className="spx-mg-12">
+          <multi-slider values="10,30,60,90"></multi-slider>
+        </div>
+
+        <div className="spx-mg-12">
           <MultiRange />
         </div>
 
-        <div className="worker">
+        <div className="spx-mg-12">
           <number-spinner value="2"></number-spinner>
         </div>
 

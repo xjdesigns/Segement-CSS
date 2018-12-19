@@ -77,6 +77,8 @@ export class MultiRange extends Component {
 
   startDrag = ev => {
     const { thumbMap } = this.state
+    // Prevent default keeps the cursor from changing
+    ev.preventDefault()
     this.setState({ isDragging: true })
 
     this.currentId = ev.target.id
@@ -124,13 +126,15 @@ export class MultiRange extends Component {
   updateValuesOnChange = (map) => {
     const { values } = this.state
     const idx = this.currentIndex
-    if (idx === 0) {
-      const next = map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
-    } else if (idx === (values.length - 1)) {
-      const prev = map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
-    } else {
-      const prev = map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
-      const next = map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
+    if (values.length > 1) {
+      if (idx === 0) {
+        map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
+      } else if (idx === (values.length - 1)) {
+        map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
+      } else {
+        map[`thumb${idx - 1}`].max = map[`thumb${idx}`].value - 1
+        map[`thumb${idx + 1}`].min = map[`thumb${idx}`].value + 1
+      }
     }
     return map
   }
@@ -153,11 +157,9 @@ export class MultiRange extends Component {
   }
 
   render () {
-    // NOTE: leftPos should use value and be a percent
-    // this will better represent this
     // even one better why not set it as a css variable???
     // with a fallback if needed? Which one is more performant is the question???
-    const { value, values, thumbMap } = this.state
+    const { value, thumbMap } = this.state
 
     return (
       <div>
