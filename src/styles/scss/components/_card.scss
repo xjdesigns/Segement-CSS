@@ -6,9 +6,6 @@
   background: $white;
   @include elevation-2;
 
-  // for testing
-  // max-width: 300px;
-
   &__img {
     position: relative;
 
@@ -22,12 +19,14 @@
         font-weight: 100;
         color: white;
       }
+
       &[data-desc] {
         &::before {
           bottom: 28px;
         }
       }
     }
+
     &[data-desc] {
       &::after {
         content: attr(data-desc);
@@ -46,6 +45,7 @@
   .#{$ns}c-action {
     margin-top: 12px;
     padding-top: 12px;
+    text-align: left;
     border-top: 1px solid $grey-l1;
   }
 }

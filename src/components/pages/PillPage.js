@@ -13,7 +13,7 @@ export class PillPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <div className="spx-pill spx-pill--pr">Primary</div>
               <div className="spx-pill spx-pill--sd">Secondary</div>
               <div className="spx-pill spx-pill--tr">Tertiary</div>
@@ -29,7 +29,7 @@ export class PillPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Pills</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

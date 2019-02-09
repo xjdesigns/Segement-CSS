@@ -14,7 +14,7 @@ export class AccordionPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
 
               <Accordion />
 
@@ -40,7 +40,7 @@ export class AccordionPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Accordion</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

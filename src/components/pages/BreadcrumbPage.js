@@ -17,7 +17,7 @@ export class BreadcrumbPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
 
               <div className="spx-bcrumb">
                 <button className="spx-trail">Home</button>
@@ -36,7 +36,7 @@ export class BreadcrumbPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Breadcrumbs</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

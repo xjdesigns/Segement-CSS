@@ -22,7 +22,7 @@ export class VideoPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <div className="spx-vid">
               <iframe
                 width="560"
@@ -44,7 +44,7 @@ export class VideoPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Videos</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

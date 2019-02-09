@@ -16,7 +16,7 @@ export class TogglePage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <label className="spx-tgl">
                 <input className="spx-tgl-input" type="checkbox" name="toggle-switch" />
                 <div className="spx-tgl-btn"></div>
@@ -32,7 +32,7 @@ export class TogglePage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Toggle Switch</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

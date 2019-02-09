@@ -21,7 +21,7 @@ export class ToastPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
 
               <button onClick={this.toggleToaster} className="spx-btn spx-btn--pr">Toggle Toast</button>
               <Toaster />
@@ -41,7 +41,7 @@ export class ToastPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Toasts</h2>
               <p>
                 <span className="spx-pill spx-pill--sd">Working</span>

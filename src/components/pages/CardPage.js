@@ -28,7 +28,7 @@ export class CardPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
 
               <div className="spx-card">
                 <div className="spx-card__img" data-title="Hello World" data-desc="Product placement goes here">
@@ -69,7 +69,7 @@ export class CardPage extends Component {
 </CodeSnippet>
 
             </div>
-            <div class="flex__i--xs-12 flex__i--md-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Card</h2>
               <p>
                 <span className="spx-pill spx-pill--pr">Stable</span>

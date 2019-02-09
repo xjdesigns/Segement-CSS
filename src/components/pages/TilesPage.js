@@ -33,7 +33,7 @@ export class TilesPage extends Component {
 
         <div className="app-view">
           <div className="flex">
-            <div className="flex__i--xs-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <div className="spx-tiles">
                 <Tile
                   actionCallback={this.myCb}
@@ -89,10 +89,10 @@ export class TilesPage extends Component {
 
 
             </div>
-            <div className="flex__i--xs-6">
+            <div className="flex__i--xs-12 flex__i--md-6">
               <h2>Tiles</h2>
               <p>
-                <span class="spx-pill spx-pill--pr">Stable</span>
+                <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Tiles offer a functional item for users to interact with. Can link to a route, pass link actions, and toggle a favorite status.</p>
             </div>
