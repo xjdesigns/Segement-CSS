@@ -1,4 +1,15 @@
 // FORMS
+
+// CSS VARIABLES
+.#{$ns}form,
+.#{$ns}select {
+  --label: var(--grey-l1);
+  --bg: white;
+  --border: var(--grey-l1);
+  --border-active: var(--brand-primary);
+  --field-error: var(--brand-error);
+}
+
 .#{$ns}form {
   input, textarea, label {
     width: 100%;
@@ -7,11 +18,15 @@
     &:focus:not(label), &:active:not(label) {
       outline: 0;
       border: 1px solid $brand-primary;
+      border: 1px solid var(--border-active);
     }
   }
 
   input, textarea {
+    background: white;
+    background: var(--bg);
     border: 1px solid $grey-l1;
+    border: 1px solid  var(--border);
     border-radius: 6px;
     padding: 12px;
     margin-bottom: 12px;
@@ -23,6 +38,7 @@
     font-size: .75rem;
     margin-bottom: 3px;
     color: $grey-l1;
+    color: var(--label)
   }
 
   // INPUT
@@ -31,7 +47,9 @@
     // ERROR STATE
     &.has-error {
       border-color: $error;
+      border-color: var(--field-error);
       color: $error;
+      color: var(--field-error);
     }
   }
 

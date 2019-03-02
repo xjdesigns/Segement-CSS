@@ -1,4 +1,11 @@
 // PAGINATOR
+
+// CSS VARIABLES
+.#{$ns}pagination {
+  --bg: var(--brand-primary);
+  --text-hover: white;
+}
+
 .#{$ns}pagination {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +22,9 @@
 
     &:hover {
       background: $primary;
+      background: var(--bg);
       color: white;
+      color: var(--text-hover);
     }
   }
 }

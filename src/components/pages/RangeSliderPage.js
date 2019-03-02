@@ -48,6 +48,16 @@ export class RangeSliderPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Range sliders offer a simple user interaction for incrementing or decrementing values.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-range-slider {
+      --track: var(--grey-l1);
+      --thumb: var(--grey-d1);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

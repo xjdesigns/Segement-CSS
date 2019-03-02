@@ -1,4 +1,12 @@
 // BREADCRUMBS
+
+// CSS VARIABLES
+.#{$ns}bcrumb {
+  --base: var(--grey-d1);
+  --active: var(--brand-primary);
+  --hover: var(--brand-primary);
+}
+
 .#{$ns}bcrumb {
   .#{$ns}trail {
     position: relative;
@@ -7,12 +15,16 @@
     background-color: transparent;
     border-top: 1px solid transparent;
     border-bottom: 1px solid $grey-d1;
+    border-bottom: 1px solid var(--base);
     transition: border .3s ease, color .3s ease;
 
     &:hover {
       color: $primary;
+      color: var(--active);
       border-top: 1px solid $primary;
+      border-top: 1px solid var(--active);
       border-bottom: 1px solid $primary;
+      border-bottom: 1px solid var(--active);
     }
 
     &::after {
@@ -26,7 +38,9 @@
 
     &:last-child {
       color: $primary;
+      color: var(--active);
       border-bottom: 1px solid $primary;
+      border-bottom: 1px solid var(--active);
 
       &::after {
         content: none;

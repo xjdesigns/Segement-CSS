@@ -42,6 +42,17 @@ export class BreadcrumbPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Breadcrumbs are used to track a current path incase you get lost you will find your way home.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-bcrumb {
+      --base: var(--grey-d1);
+      --active: var(--brand-primary);
+      --hover: var(--brand-primary);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 
