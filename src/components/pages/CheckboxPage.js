@@ -45,6 +45,18 @@ export class CheckboxPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Checkboxes... nuff said.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-checkbox {
+      --label: var(--grey-l1);
+      --icon: white;
+      --check-active: var(--brand-primary);
+      --check-inactive: var(--grey-l1);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
         </div>

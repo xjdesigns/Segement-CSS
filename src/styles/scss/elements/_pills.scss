@@ -8,7 +8,9 @@
   font-size: .75rem;
   border-radius: 12px;
   background-color: $grey-l1;
+  background-color: var(--grey-l1);
   color: white;
+  color: var(--text);
   @include elevation-1;
 }
 
@@ -20,8 +22,19 @@ $coloring: (
   tr: $brand-tertiary,
   g1: $grey-d1
 );
+
+// CSS VARIABLES
+.#{$ns}pill {
+  --pr: var(--brand-primary);
+  --sd: var(--brand-secondary);
+  --tr: var(--brand-tertiary);
+  --g1: var(--grey-d1);
+  --text: white;
+}
+
 @each $vr, $cr in $coloring {
   .#{$ns}pill--#{$vr} {
     background-color: $cr;
+    background-color: var(--#{$vr});
   }
 }

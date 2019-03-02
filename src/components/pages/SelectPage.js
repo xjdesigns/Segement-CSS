@@ -81,6 +81,13 @@ export class SelectPage extends Component {
                 <span className="spx-pill spx-pill--sd">Working</span>
               </p>
               <p>Selectboxes are used in forms for selecting options. Adding the attribute multiple allows for more selections.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    Select uses forms variables.
+  `}
+</CodeSnippet>
             </div>
           </div>
 

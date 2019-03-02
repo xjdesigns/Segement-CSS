@@ -1,4 +1,13 @@
 // CHECKBOX
+
+// CSS VARIABLES
+.#{$ns}checkbox {
+  --label: var(--grey-l1);
+  --icon: white;
+  --check-active: var(--brand-primary);
+  --check-inactive: var(--grey-l1);
+}
+
 .#{$ns}checkbox {
   position: relative;
   display: inline-block;
@@ -8,6 +17,7 @@
   line-height: 1.2;
   margin-right: 12px;
   color: $grey-l1;
+  color: var(--label);
   cursor: pointer;
 
   &:focus {
@@ -22,6 +32,7 @@
     &:focus + .#{$ns}checkbox__box {
       &:after {
         border-color: $primary;
+        border-color: var(--check-active);
       }
     }
 
@@ -29,10 +40,13 @@
       &:before {
         transform: scale(0.8);
         color: white;
+        color: var(--icon);
       }
       &:after {
         border-color: $primary;
+        border-color: var(--check-active);
         background-color: $primary;
+        background-color: var(--check-active);
       }
     }
   }
@@ -60,6 +74,7 @@
     }
     &:after {
       border: 2px solid $grey-l1;
+      border: 2px solid var(--check-inactive);
     }
   }
 }

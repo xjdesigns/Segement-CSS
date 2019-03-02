@@ -23,7 +23,7 @@ export class ButtonPage extends Component {
                 <button className="spx-btn spx-btn--pr spx-btn--circle" data-icon="check"></button>
               </div>
               <div className="sg-view-row">
-                <button className="spx-btn spx-btn--sm spx-btn--pr">Small</button>
+                <button className="spx-btn spx-btn--sm spx-btn--sd">Small</button>
                 <button className="spx-btn spx-btn--pr spx-btn--circle spx-btn--sm" data-icon="check"></button>
                 <button className="spx-btn spx-btn--sm spx-btn--pr spx-btn--icon" data-icon="check">Small Icon</button>
                 <button className="spx-btn spx-btn--sm spx-btn--pr spx-btn--material" data-icon="check">Small Material</button>
@@ -50,6 +50,16 @@ export class ButtonPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Buttons add easy understanding to your page for elements a user should interact with. Whether it takes them to a new route or location, maybe toggles something on the page a user always knows a button is something of use.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-btn {
+      --pr: var(--brand-primary);
+      --sd: var(--brand-secondary);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

@@ -51,6 +51,18 @@ export class RadioPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Radios buttons allow the user to interact with several options while being allowed to select only one.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-radio {
+      --label: var(--grey-l1);
+      --radio-hover: var(--grey-d1);
+      --radio-active: var(--brand-primary);
+      --radio-inactive: var(--grey-l1);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

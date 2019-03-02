@@ -35,6 +35,19 @@ export class PillPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Pills are great for displaying state, info you want to focus on, or disclaimers.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-pill {
+      --pr: var(--brand-primary);
+      --sd: var(--brand-secondary);
+      --tr: var(--brand-tertiary);
+      --g1: var(--grey-d1);
+      --text: white;
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

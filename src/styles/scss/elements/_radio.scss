@@ -1,5 +1,14 @@
 // RADIO BUTTONS
 // CHECKBOX/RADIO //
+
+// CSS VARIABLES
+.#{$ns}radio {
+  --label: var(--grey-l1);
+  --radio-hover: var(--grey-d1);
+  --radio-active: var(--brand-primary);
+  --radio-inactive: var(--grey-l1);
+}
+
 .#{$ns}radio {
   position: relative;
   display: inline-block;
@@ -9,6 +18,7 @@
   line-height: 1.2;
   margin-right: 12px;
   color: $grey-l1;
+  color: var(--label);
   cursor: pointer;
 
   // RADIO
@@ -19,6 +29,7 @@
     &:focus + .#{$ns}radio__dot {
       &::before {
         background-color: $grey-d1;
+        background-color: var(--radio-hover);
         transform: scale(.5);
         z-index: 2;
       }
@@ -27,6 +38,7 @@
     &:checked + .#{$ns}radio__dot {
       &::before {
         background-color: $primary;
+        background-color: var(--radio-active);
         transform: scale(.5);
         z-index: 2;
       }
@@ -38,6 +50,7 @@
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid $grey-l1;
+    border: 1px solid var(--radio-inactive);
     position: absolute;
     top: 0;
     left: 0;
@@ -63,6 +76,7 @@
   &:hover {
     .#{$ns}radio__dot::before {
       background-color: $grey-d1;
+      background-color: var(--radio-hover);
       transform: scale(.5);
       transition: transform .3s ease, color .3s ease;
     }

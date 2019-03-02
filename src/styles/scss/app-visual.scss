@@ -99,7 +99,7 @@ $header: 72px;
   // NAV
   &__nav {
     max-height: calc(100vh - #{$header});
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 24px;
     color: white;
 

@@ -46,6 +46,15 @@ export class LoadingPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Loading dots can accomdate up to 6 by default. If more than 6 is needed update the sass var inside the partial. Built on a one second timer.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-loading {
+      --bar: var(--brand-primary);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

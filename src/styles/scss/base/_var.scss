@@ -7,7 +7,7 @@ $font-size-root: 100%; // default is 16px
 $font-size-base: $font-size-root;
 $line-height-base: 1.1;
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", 'Roboto', helvetica, arial, sans-serif;
-$font-family-headline: 'Titillium Web', sans-serif;
+$font-family-headline: $font-family-base;
 
 // BASE GRID //
 $container: 1140px; // our max width
@@ -54,8 +54,21 @@ $b-02: rgba(0,0,0,0.5);
 // LIGATURES -- ICONS //
 $liga-font-family: 'Material Icons';
 
-$pr: #00FF12;
-$pr-l1: #45E80C;
-$pr-l2: #A1FF0D;
-$pr-d1: #0CE85A;
-$pr-d2: #0DFFA7;
+// CSS VARIABLES
+:root {
+  --brand-primary: #{$brand-primary};
+  --brand-secondary: #{$brand-secondary};
+  --brand-tertiary: #{$brand-tertiary};
+  --brand-info: #{$brand-info};
+  --brand-success: #{$brand-success};
+  --brand-warning: #{$brand-warning};
+  --brand-error: #{$brand-error};
+  --grey-l1: #{$grey-l1};
+  --grey-d1: #{$grey-d1};
+}
+
+// $pr: #00FF12;
+// $pr-l1: #45E80C;
+// $pr-l2: #A1FF0D;
+// $pr-d1: #0CE85A;
+// $pr-d2: #0DFFA7;

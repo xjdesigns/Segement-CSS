@@ -38,6 +38,17 @@ export class TogglePage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Toggle switches are checkboxes that give the appearance of the popular apple toggle switch.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-tgl {
+      --bg-inactive: var(--grey-d1);
+      --bg-active: var(--brand-primary);
+      --thumb: white;
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

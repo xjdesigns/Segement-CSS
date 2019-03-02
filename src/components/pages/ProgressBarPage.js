@@ -42,6 +42,17 @@ export class ProgressBarPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Progress bars display a percentage state to the user. This helps keep track for things like loading, waiting for responses, or so users know you are working on something for them.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-progress {
+      --bar: var(--brand-primary);
+      --bg: var(--grey-l1);
+      --text: white;
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

@@ -53,6 +53,16 @@ export class PaginationPage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Pagination allows you to present to a user options for jumping from page to page, with options for next or skip ahead.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-pagination {
+      --bg: var(--brand-primary);
+      --text-hover: white;
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

@@ -42,6 +42,17 @@ export class TemplatePage extends Component {
                 <span className="spx-pill spx-pill--pr">Stable</span>
               </p>
               <p>Flyout menus add a toggle action with a selectable area. Default is list styling but you can apply anything.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-flyout {
+      --bg: white;
+      --border: var(--grey-l1);
+      --hover: var(--brand-primary);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

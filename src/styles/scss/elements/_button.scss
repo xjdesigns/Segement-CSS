@@ -108,9 +108,12 @@ $btn-padding: 12px; // we math with this number below
   &--sm {
     min-width: 26px;
     height: 26px;
+
+    &::before {
+      line-height: 1.2;
+    }
   }
 }
-
 
 ///////////////////
 // BUTTON MAP //
@@ -120,24 +123,38 @@ pr: $brand-primary,
 sd: $brand-secondary
 );
 
+///////////////////
+// CSS VARIABLES
+///////////////////
+.#{$ns}btn {
+  --pr: var(--brand-primary);
+  --sd: var(--brand-secondary);
+}
+
 @each $button, $btn in $btn-map {
   .#{$ns}btn {
     &--#{$button} {
       background-color: $btn;
+      background-color: var(--#{$button});
       border-color: $btn;
+      border-color: var(--#{$button});
 
       &:hover {
         background-color: transparent;
         color: $btn;
+        color: var(--#{$button});
       }
     }
     &--#{$button}--inverted {
       background-color: transparent;
       color: $btn;
+      color: var(--#{$button});
       border-color: $btn;
+      border-color: var(--#{$button});
 
       &:hover {
         background-color: $btn;
+        background-color: var(--#{$button});
         color: white;
       }
     }
@@ -145,13 +162,16 @@ sd: $brand-secondary
   .#{$ns}btn-group {
     &--#{$button} {
       border-color: $btn;
+      border-color: var(--#{$button});
 
       .btn-group__btn {
         background-color: $btn;
+        background-color: var(--#{$button});
 
         &:hover {
           background-color: transparent;
           color: $btn;
+          color: var(--#{$button});
         }
       }
     }

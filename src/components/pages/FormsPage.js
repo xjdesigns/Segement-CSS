@@ -107,6 +107,19 @@ export class FormsPage extends Component {
                 <span className="spx-pill spx-pill--sd">Working</span>
               </p>
               <p>Forms are built as elements, which work with SPX grid. Using the grid will allow for multiple layouts with forms while keeping the code base minimal.</p>
+
+<CodeSnippet>
+  {`
+    // CSS VARIABLES
+    .spx-form {
+      --label: var(--grey-l1);
+      --bg: white;
+      --border: var(--grey-l1);
+      --border-active: var(--brand-primary);
+      --field-error: var(--brand-error);
+    }
+  `}
+</CodeSnippet>
             </div>
           </div>
 

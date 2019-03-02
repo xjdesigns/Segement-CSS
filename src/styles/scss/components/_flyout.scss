@@ -1,3 +1,10 @@
+// CSS VARIABLES
+.#{$ns}flyout {
+  --bg: white;
+  --border: var(--grey-l1);
+  --hover: var(--brand-primary);
+}
+
 .#{$ns}flyout {
   position: relative;
   display: inline-block;
@@ -29,7 +36,9 @@
     z-index: 10;
     transform: translateY(-50%);
     background: white;
+    background: var(--bg);
     border: 1px solid $grey-l1;
+    border: 1px solid var(--border);
     cursor: pointer;
     @include elevation-3;
     display: none;
@@ -39,7 +48,9 @@
 
       &:hover {
         background-color: $primary;
+        background-color: var(--hover);
         color: white;
+        color: var(--bg);
       }
     }
   }

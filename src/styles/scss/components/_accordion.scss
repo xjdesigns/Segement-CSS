@@ -38,14 +38,17 @@
     .#{$ns}ac-title {
       flex: 0 1 auto;
       margin-right: 12px;
+      text-align: left;
 
       & + .#{$ns}ac-secondary {
         flex: 1 1 auto;
         margin-right: 12px;
+        text-align: left;
       }
     }
     .#{$ns}ac-action {
-      flex: 0 0 auto;
+      flex: 1 0 auto;
+      text-align: right;
 
       .#{$ns}btn {
         padding: 0;
