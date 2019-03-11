@@ -20,6 +20,7 @@ export class Header extends Component {
             href="https://github.com/xjdesigns/Segment-CSS/blob/master/SIXPIXELS/style.css"
             className="spx-link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span>v1.0.0</span>
           </a>

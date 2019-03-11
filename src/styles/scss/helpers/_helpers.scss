@@ -29,6 +29,10 @@
   &.is-open {
     display: block;
   }
+
+  &--no-bg {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 // MARGIN & PADDING

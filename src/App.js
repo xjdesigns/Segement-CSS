@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import Sidebar from './components/layout/Sidebar'
+import ColorPane from './components/layout/ColorPane'
 import {
   Route,
   Switch,
@@ -42,6 +43,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Sidebar />
+        <ColorPane />
 
         <Switch>
           <Route exact path="/" component={Homepage}/>

@@ -1,2 +1,3 @@
 export const OPEN_SIDEBAR = 'OPEN_SIDEBAR'
 export const TOGGLE_TOAST = 'TOGGLE_TOAST'
+export const TOGGLE_COLOR_PANE = 'TOGGLE_COLOR_PANE'

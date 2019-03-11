@@ -23,6 +23,7 @@
     position: relative;
     cursor: pointer;
     background: $brand-primary;
+    background: var(--brand-primary);
     margin: 3px;
     padding: 6px;
     color: white;
