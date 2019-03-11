@@ -1,8 +1,13 @@
-import { OPEN_SIDEBAR, TOGGLE_TOAST } from './actionType'
+import {
+  OPEN_SIDEBAR,
+  TOGGLE_TOAST,
+  TOGGLE_COLOR_PANE,
+} from './actionType'
 
 export const initialState = {
   isSidebarOpen: false,
   isToastOpen: false,
+  isColorPaneOpen: false,
 }
 
 export default function layoutState (state = initialState, action) {
@@ -18,6 +23,13 @@ export default function layoutState (state = initialState, action) {
       const newState = {
         ...state,
         isToastOpen: action.payload.vis,
+      }
+      return newState
+    }
+    case TOGGLE_COLOR_PANE: {
+      const newState = {
+        ...state,
+        isColorPaneOpen: action.payload.vis,
       }
       return newState
     }

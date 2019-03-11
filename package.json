@@ -6,6 +6,7 @@
   "dependencies": {
     "history": "^4.7.2",
     "react": "^16.4.1",
+    "react-color": "^2.17.0",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
@@ -13,11 +14,13 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.10",
     "gh-pages": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
     "gulp-watch": "^5.0.0",
@@ -36,5 +39,10 @@
     "segment": "gulp prod",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ]
 }

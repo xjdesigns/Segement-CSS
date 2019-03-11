@@ -16,15 +16,12 @@ $btn-padding: 12px; // we math with this number below
   background-color: transparent;
   color: $white;
   text-align: center;
+  line-height: 1;
   text-decoration: none;
   transition: all .3s ease;
 
   &:hover {
     color: $white;
-  }
-
-  &:not(:last-child) {
-    margin-right: 12px; // TODO: needed??
   }
 
   // SIZING
