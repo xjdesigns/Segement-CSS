@@ -344,10 +344,10 @@ $header: 72px;
 // COLOR CHANGER
 .app-color-pane {
   position: fixed;
-  top: 0;
+  top: 72px;
   right: 0;
   bottom: 0;
-  padding-top: 72px;
+  z-index: 1;
   background: rgba(0,0,0,0.8);
   width: 320px;
   transform: translateX(100%);
@@ -359,7 +359,7 @@ $header: 72px;
 
   .app-cp-action {
     position: absolute;
-    top: 82px;
+    top: 12px;
     right: 100%;
     width: 50px;
     padding: 3px;
@@ -418,6 +418,22 @@ $header: 72px;
 
     &.\--gd1 {
       background-color: var(--grey-d1);
+    }
+
+    &.\--info {
+      background-color: var(--brand-info);
+    }
+
+    &.\--success {
+      background-color: var(--brand-success);
+    }
+
+    &.\--warning {
+      background-color: var(--brand-warning);
+    }
+
+    &.\--error {
+      background-color: var(--brand-error);
     }
   }
 }

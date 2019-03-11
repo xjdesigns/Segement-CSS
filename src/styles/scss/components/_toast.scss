@@ -44,19 +44,25 @@
 
   &.is-success {
     border: 1px solid $brand-success;
+    border-color: var(--brand-success);
 
     &::before {
       background: $brand-success;
+      background: var(--brand-success);
       border: 1px solid $brand-success;
+      border-color: var(--brand-success);
     }
   }
 
   &.is-error {
     border: 1px solid $brand-error;
+    border-color: var(--brand-error);
 
     &::before {
       background: $brand-error;
+      background: var(--brand-error);
       border: 1px solid $brand-error;
+      border-color: var(--brand-error);
     }
   }
 

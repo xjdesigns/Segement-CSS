@@ -16,6 +16,18 @@ const cssVars = [{
 }, {
   css: '--grey-d1',
   cls: '--gd1',
+}, {
+  css: '--brand-info',
+  cls: '--info',
+}, {
+  css: '--brand-success',
+  cls: '--success',
+}, {
+  css: '--brand-warning',
+  cls: '--warning',
+}, {
+  css: '--brand-error',
+  cls: '--error',
 }]
 
 export class ColorPickerContainer extends Component {
@@ -66,32 +78,6 @@ export class ColorPickerContainer extends Component {
     const { values } = this.state
 
     return (
-      // <div className="spx-flyout spx-flyout--right is-open">
-      //   <div className="spx-flyout__menu">
-      //
-      //     {values.map((val, idx) => {
-      //       return (
-      //         <div
-      //           key={idx}
-      //           className="app-picker-mn"
-      //         >
-      //           <div className="app-picker-mn__title">
-      //             {val.css}
-      //           </div>
-      //           <div
-      //             onClick={() => this.setColorToChange(val.css)}
-      //             className={`app-picker-mn__val ${val.cls}`}
-      //           />
-      //         </div>
-      //       )
-      //     })}
-      //
-      //     <ChromePicker
-      //       color={ this.state.background }
-      //       onChangeComplete={ this.handleChangeComplete }
-      //     />
-      //   </div>
-      // </div>
       <div>
         <ChromePicker
           color={ this.state.background }
