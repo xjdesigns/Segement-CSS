@@ -17,7 +17,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>CSS ONLY</h2>
+                <h3>CSS ONLY</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>Segment is designed to be CSS only, while providing extending classes for display which you flavor to your liking. Whether your using React, Angular, Vue, Javascript, etc&hellip;</p>
@@ -26,7 +26,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>CSS VARS</h2>
+                <h3>CSS VARS</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>CSS variable support with fallback for browsers that do not yet support the spec. Fallbacks are the framework default, and require a sass compile if you want to change it as a base.</p>
@@ -35,7 +35,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>IE11 &gt;</h2>
+                <h3>IE11 &gt;</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>Supports current browsers and IE11. The goal is to always support the browsers that are supported.</p>
@@ -44,7 +44,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>SCOPING</h2>
+                <h3>SCOPING</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>Namespacing allows for scoping, and all elements or components are scoped to its parent.</p>
@@ -53,7 +53,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>SYSTEM FONTS</h2>
+                <h3>SYSTEM FONTS</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>Base styling uses no webfonts and only system level fonts. Not happy, just write a base override and include what you need.</p>
@@ -62,7 +62,7 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h2>1 VAR FILE</h2>
+                <h3>1 VAR FILE</h3>
               </div>
               <div className="app-ftile__desc">
                 <p>All variables are inside of 1 file for easy referencing and also keeps you aware to avoid bloat.</p>
