@@ -47,6 +47,7 @@ export class Sidebar extends Component {
               </SidebarNav>
               <SidebarNav navTitle="Components">
                 <NavLink to="/AccordionPage" activeClassName="is-active">Accordion</NavLink>
+                <NavLink to="/ActionPanel" activeClassName="is-active">Action Panel</NavLink>
                 <NavLink to="/BreadcrumbPage" activeClassName="is-active">Breadcrumb</NavLink>
                 <NavLink to="/CardPage" activeClassName="is-active">Card</NavLink>
                 <NavLink to="/FlyoutPage" activeClassName="is-active">Flyout</NavLink>

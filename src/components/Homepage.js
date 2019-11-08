@@ -13,6 +13,24 @@ export class Homepage extends Component {
         </div>
 
         <div className="app-view">
+
+          <div className="spx-apanel spx-apanel--animated">
+            <div className="spx-apanel__core">
+              <button className="spx-btn spx-btn--sm spx-btn--pr--inverted spx-btn--circle" data-icon="check" />
+            </div>
+
+            <div className="spx-apanel__title">Action Panel</div>
+
+            <div className="spx-apanel__actions">
+              <div className="spx-panel-actions">
+                <button className="spx-btn spx-btn--sm spx-btn--pr spx-btn--circle" data-icon="alarm" />
+              </div>
+              <div className="spx-panel-actions">
+                <button className="spx-btn spx-btn--sm spx-btn--pr spx-btn--circle" data-icon="bookmark" />
+              </div>
+            </div>
+          </div>
+
           <div className="app-feature-tiles">
 
             <div className="app-ftile">

@@ -13,11 +13,22 @@ I kept the sass process on gulp since its up and running and I also use only the
 ## Running the app & output
 This currently requires you to run to processes in your shell of choice.
 ```bash
+Run to just create react
+yarn start
+```
+
+```bash
+Run to create react and run gulp processing for sass
 yarn start:dev
 ```
 
-
 This command gives you the final output, which is minified and only the css.
+```bash
+npm run segment
+or
+yarn segment
+```
+
 ```bash
 gulp prod
 ```
