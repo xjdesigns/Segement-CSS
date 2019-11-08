@@ -27,6 +27,7 @@ import TogglePage from './components/pages/TogglePage'
 import VideoPage from './components/pages/VideoPage'
 // Components
 import AccordionPage from './components/pages/AccordionPage'
+import ActionPanel from './components/pages/ActionPanel'
 import BreadcrumbPage from './components/pages/BreadcrumbPage'
 import CardPage from './components/pages/CardPage'
 import FlyoutPage from './components/pages/FlyoutPage'
@@ -62,6 +63,7 @@ class App extends Component {
           <Route exact path="/TogglePage" component={TogglePage}/>
           <Route exact path="/VideoPage" component={VideoPage}/>
           <Route exact path="/AccordionPage" component={AccordionPage}/>
+          <Route exact path="/ActionPanel" component={ActionPanel}/>
           <Route exact path="/BreadcrumbPage" component={BreadcrumbPage}/>
           <Route exact path="/CardPage" component={CardPage}/>
           <Route exact path="/FlyoutPage" component={FlyoutPage}/>

@@ -27,15 +27,11 @@ export class LoadingPage extends Component {
 
 <CodeSnippet>
   {`
-    <pre class="prettyprint">
-      <code code-display>
-        <div class="spx-loading">
-          <div class="spx-loading__dots"></div>
-          <div class="spx-loading__dots"></div>
-          <div class="spx-loading__dots"></div>
-        </div>
-      </code>
-    </pre>
+    <div class="spx-loading">
+      <div class="spx-loading__dots"></div>
+      <div class="spx-loading__dots"></div>
+      <div class="spx-loading__dots"></div>
+    </div>
   `}
 </CodeSnippet>
 
