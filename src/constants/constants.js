@@ -11,6 +11,9 @@ export const HELP_DESC = [{
     add: 'spx-click-shield',
     desc: 'Adds an overlay using fixed positioning, to avoid DOM clutter with event handlers to a simple method of grabbing external clicks. DO NOT WRAP anything inside of this. Toggle the .is-open class on the click shield.',
   }, {
+    add: 'spx-txt-lt, spx-txt-ct, spx-txt-rt',
+    desc: 'Adds text align left, center, or right',
+  }, {
     add: 'spx-pd-{value}',
     desc: 'Adds padding to all sides using 4 values. Values = 6,12,18,24',
   }, {

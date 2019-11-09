@@ -17,6 +17,10 @@ export class ButtonPage extends Component {
               <div className="sg-view-row">
                 <button className="spx-btn spx-btn--pr">I am button</button>
                 <button className="spx-btn spx-btn--pr spx-btn--icon" data-icon="check">Icon</button>
+                <button className="spx-btn spx-btn--pr" disabled>I am button</button>
+              </div>
+              <div className="sg-view-row">
+                <button className="spx-btn spx-btn--pr spx-btn--block">Block button</button>
               </div>
               <div className="sg-view-row">
                 <button className="spx-btn spx-btn--pr spx-btn--material" data-icon="check">Material</button>
@@ -37,10 +41,23 @@ export class ButtonPage extends Component {
 <CodeSnippet>
   {`
     <button class="spx-btn spx-btn--pr">I am button</button>
+    <button class="spx-btn spx-btn--pr" disabled>Disabled button</button>
     <button class="spx-btn spx-btn--pr spx-btn--icon" data-icon="check">Icon</button>
     <button class="spx-btn spx-btn--pr spx-btn--material" data-icon="check">Material</button>
     <button class="spx-btn spx-btn--pr spx-btn--circle" data-icon="check"></button>
     <button class="spx-btn spx-btn--sm spx-btn--pr spx-btn--material" data-icon="check">Small</button>
+    <button class="spx-btn spx-btn--pr spx-btn--block">Block button</button>
+  `}
+</CodeSnippet>
+
+<CodeSnippet>
+  {`
+    <button class="spx-btn spx-btn--pr">Primary</button>
+    <button class="spx-btn spx-btn--sd">Secondary</button>
+
+    // Inverted
+    <button class="spx-btn spx-btn--pr--inverted">Inverted PR</button>
+    <button class="spx-btn spx-btn--sd--inverted">Inverted SD</button>
   `}
 </CodeSnippet>
             </div>

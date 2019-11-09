@@ -8,7 +8,7 @@ export class HelperPage extends Component {
       <div>
         <div className="sg-hero">
           <div className="sg-hero__elem">
-            <h2>Helpers</h2>
+            <h1>Helpers</h1>
           </div>
         </div>
 

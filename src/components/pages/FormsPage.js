@@ -36,7 +36,7 @@ export class FormsPage extends Component {
                 <div className="flex">
                   <div className="flex__i--xs-6">
                     <label className="spx-label">Input Label</label>
-                    <input className="spx-input" type="text" placeholder="Placeholder Text" />
+                    <input className="spx-input" type="text" placeholder="Placeholder Text" disabled />
                   </div>
                   <div className="flex__i--xs-6">
                     <label className="spx-label">Input Label</label>
@@ -85,9 +85,23 @@ export class FormsPage extends Component {
           <input class="spx-input" type="text" value="Input Value" />
         </div>
         <div class="flex__i--xs-12">
+          <label class="spx-label">Input Label w/ Error</label>
+          <input class="spx-input has-error" type="text" value="Input Value" />
+        </div>
+      </div>
+    </form>
+
+    <form class="spx-form">
+      <div class="flex">
+        <div class="flex__i--xs-12">
           <label class="spx-label">Textarea Label</label>
           <textarea class="spx-textarea" cols="30" rows="10"></textarea>
         </div>
+      </div>
+    </form>
+
+    <form class="spx-form">
+      <div class="flex">
         <div class="flex__i--xs-12">
           <label class="spx-label">Search Label</label>
           <div class="spx-search">
