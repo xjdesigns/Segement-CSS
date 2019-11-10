@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 export class Homepage extends Component {
+  fileSize = '41kb'
+
   render () {
     return (
       <div>
@@ -75,7 +77,7 @@ export class Homepage extends Component {
 
           <div>
             <div>
-              <h2>Current filesize minified: 37kb</h2>
+              <h2>Current filesize minified: {this.fileSize}</h2>
             </div>
 
             <div className="sg-divider"></div>

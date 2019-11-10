@@ -21,6 +21,7 @@
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
     "gulp-watch": "^5.0.0",
@@ -36,7 +37,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "sass": "gulp watch",
-    "segment": "gulp prod",
+    "prod": "gulp prod",
+    "prod:beta": "gulp prod:beta",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
