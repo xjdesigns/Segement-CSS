@@ -1,7 +1,9 @@
 var gulp = require('gulp');
-var watch = require('gulp-watch');
-gulp.task('watch', ['sass'], function () {
-    watch('./src/styles/scss/**/*.scss', function(){
-      gulp.start('sass');
-    });
-});
+
+gulp.task('watch', gulp.series('sass', (done) => {
+  gulp.watch(['./src/styles/scss/**/*.scss'], (done) => {
+    gulp.task('sass')();
+    done();
+  });
+  done();
+}));
