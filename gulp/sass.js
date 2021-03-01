@@ -22,6 +22,8 @@ gulp.task('sass', function () {
     outputStyle: 'compressed'
   })
 
+  console.warn('sass running')
+
   return gulp.src('./src/styles/scss/**/*.{sass,scss}')
     .pipe(plumber(plumberSettings))
     .pipe(sass(settings))
