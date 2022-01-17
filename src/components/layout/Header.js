@@ -22,7 +22,7 @@ export class Header extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>v1.0.0</span>
+            <span>v2.0.0</span>
           </a>
         </div>
 
