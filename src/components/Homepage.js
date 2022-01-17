@@ -37,10 +37,10 @@ export class Homepage extends Component {
 
             <div className="app-ftile">
               <div className="app-ftile__title">
-                <h3>IE11 &gt;</h3>
+                <h3>SUPPORT</h3>
               </div>
               <div className="app-ftile__desc">
-                <p>Supports current browsers and IE11. The goal is to always support the browsers that are supported.</p>
+                <p>Supports current browsers. The goal is to always support the browsers that are supported.</p>
               </div>
             </div>
 
@@ -85,7 +85,6 @@ export class Homepage extends Component {
             <ul className="spx-list">
               <li>Light weight</li>
               <li>1 variable file for easy customization</li>
-              <li>IE support for 11 and above</li>
               <li>Uses no webfonts, only system level fonts</li>
               <li>Built on an atomic level for minimal trumping</li>
               <li>All components are scoped to its component classes</li>
