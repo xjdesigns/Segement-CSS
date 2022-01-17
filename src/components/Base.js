@@ -40,6 +40,28 @@ export class BasePage extends Component {
 </CodeSnippet>
 
           <div className="sg-divider"></div>
+          <h2>CSS Variables</h2>
+
+<CodeSnippet>
+  {`
+    :root {
+      --brand-primary: #{$brand-primary};
+      --brand-secondary: #{$brand-secondary};
+      --brand-tertiary: #{$brand-tertiary};
+      --brand-info: #{$brand-info};
+      --brand-success: #{$brand-success};
+      --brand-warning: #{$brand-warning};
+      --brand-error: #{$brand-error};
+      --grey-l1: #{$grey-l1};
+      --grey-d1: #{$grey-d1};
+      --font-size-root: #{$font-size-root};
+      --font-size-base: #{$font-size-base};
+      --font-family-base: #{$font-family-base};
+    }
+  `}
+</CodeSnippet>
+
+          <div className="sg-divider"></div>
 
           <div className="flex">
             <div className="flex__i--xs-12 flex__i--md-6">
@@ -86,8 +108,11 @@ export class BasePage extends Component {
             </div>
             <div className="flex__i--xs-12 flex__i--md-6">
               <a href="https://github.com/xjdesigns/Segment-CSS" className="spx-link">Anchor Link</a>
+              <div className="sg-divider"></div>
               <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque dolorum excepturi repellat totam perferendis voluptatibus doloribus tempore maiores aliquid!</p>
+              <div className="sg-divider"></div>
               <blockquote>Base blockquote, additional classes available</blockquote>
+              <div className="sg-divider"></div>
               <ul className="spx-list">
                 <li>01</li>
                 <li>02</li>
